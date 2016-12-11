@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="#6090"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin" tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dang ky"
+        android:id="@+id/buttonDangky"
+        android:layout_alignParentTop="true"
+        android:layout_toLeftOf="@+id/buttonchat"
+        android:layout_toStartOf="@+id/buttonchat" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextUsername"
+        android:layout_alignBottom="@+id/buttonDangky"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/buttonDangky"
+        android:layout_toStartOf="@+id/buttonDangky" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="send"
+        android:id="@+id/buttonchat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="50dp"
+        android:id="@+id/listViewUsername"
+        android:layout_below="@+id/editTextUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="500dp"
+        android:id="@+id/listViewchat"
+        android:layout_below="@+id/listViewUsername"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <ImageButton
+        android:src="@android:drawable/ic_btn_speak_now"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonGhiam"
+        android:layout_alignBottom="@+id/listViewchat"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginBottom="57dp" />
+
+    <ImageButton
+    android:src="@android:drawable/ic_media_pause"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/imageButtonXong"
+    android:layout_alignBottom="@+id/listViewchat"
+    android:layout_alignParentRight="true"
+    android:layout_alignParentEnd="true" />
+
+    <ImageButton
+        android:src="@android:drawable/stat_sys_upload_done"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/imageButtonGui"
+        android:layout_above="@+id/imageButtonGhiam"
+        android:layout_alignLeft="@+id/imageButtonGhiam"
+        android:layout_alignStart="@+id/imageButtonGhiam" />
+
+</RelativeLayout>
